@@ -11,11 +11,13 @@
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
     "db:check": "drizzle-kit check",
-    "db:reset": "tsx scripts/reset-db.ts",
+    "db:reset": "tsx scripts/reset-db.ts && drizzle-kit push",
     "db:clean": "tsx scripts/clean-db.ts",
     "db:seed": "tsx scripts/seed.ts",
     "db:fix-types": "tsx scripts/fix-types.ts",
     "db:setup": "tsx scripts/setup-db.ts",
+    "db:check-relations": "tsx scripts/check-relations.ts",
+    "db:show-relations": "tsx scripts/show-movie-relations.ts",
     "schema:verify": "tsx scripts/verify-schema.ts"
   },
   "dependencies": {

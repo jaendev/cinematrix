@@ -1,4 +1,4 @@
-import { int, mysqlTable, varchar, timestamp, text, date, boolean, decimal, double } from 'drizzle-orm/mysql-core';
+import { int, mysqlTable, varchar, timestamp, text, date, boolean, double } from 'drizzle-orm/mysql-core';
 import { relations } from 'drizzle-orm'
 import { wishlistsTable } from '../06-features/wishlists';
 import { movieDirectorsTable } from '../03-relations/movie-directors';

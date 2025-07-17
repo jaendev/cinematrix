@@ -29,8 +29,7 @@ async function resetDatabase() {
 
     await connection.end()
 
-    console.log('\nNow you can run:')
-    console.log('npm run db:push')
+    console.log('\nExecuting npm run db:push to apply schema changes...')
 
   } catch (error) {
     console.error('Error:', error)
