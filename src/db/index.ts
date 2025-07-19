@@ -1,4 +1,3 @@
-import 'dotenv/config';
 import { drizzle } from "drizzle-orm/mysql2";
 import { DATABASE_URL } from '../../config/config';
 import * as schema from './schema/index';
