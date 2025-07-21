@@ -9,6 +9,11 @@ export interface CreateUserDTO {
   dateOfBirth?: Date
 }
 
+export interface ResponseUserDTO extends CreateUserDTO {
+  user?: object
+  message?: string
+}
+
 export interface CustomUserToken extends User {
   firstName: string;
   lastName: string;

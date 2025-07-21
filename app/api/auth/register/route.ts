@@ -13,7 +13,6 @@ const registrationSchema = z.object({
 })
 
 // This function handles user registration
-// TODO: Implement call in a service
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
@@ -34,8 +33,8 @@ export async function POST(request: NextRequest) {
           lastName: newUserData.lastName,
           phone: newUserData.phone,
           dateOfBirth: newUserData.dateOfBirth,
-          isActive: newUserData.isActive,
-          createdAt: newUserData.createdAt,
+          isActive: true,
+          createdAt: new Date(),
         }
       },
       { status: 201 }

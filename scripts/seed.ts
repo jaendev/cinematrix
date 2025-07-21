@@ -289,33 +289,12 @@ async function seedDatabase() {
 
     const userData = [
       {
-        email: 'john.doe@example.com',
-        password: 'hashed_password_123',
-        firstName: 'John',
-        lastName: 'Doe',
-        phone: '+1234567890'
+        email: 'admin@gmail.com',
+        password: '$2b$12$j/XRcyxdwTSnAmvT.L5TAu60V1CKZ26ytHgxfXQglFkzYkw7wo5Gi',
+        firstName: 'admin',
+        lastName: 'admin',
+        phone: '123456789'
       },
-      {
-        email: 'jane.smith@example.com',
-        password: 'hashed_password_456',
-        firstName: 'Jane',
-        lastName: 'Smith',
-        phone: '+1987654321'
-      },
-      {
-        email: 'movie.lover@example.com',
-        password: 'hashed_password_789',
-        firstName: 'Alex',
-        lastName: 'Johnson',
-        phone: '+1555123456'
-      },
-      {
-        email: 'cinema.fan@example.com',
-        password: 'hashed_password_321',
-        firstName: 'Sarah',
-        lastName: 'Williams',
-        phone: '+1555987654'
-      }
     ]
 
     // Insert data and get the inserted records back

@@ -88,7 +88,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   // Session configuration
   session: {
     strategy: "jwt", // Use JWT for sessions (good for serverless)
-    maxAge: 30 * 24 * 60 * 60, // 30 days
+    maxAge: 24 * 60 * 60, // 1 day
   },
 
 })
