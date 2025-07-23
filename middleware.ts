@@ -4,14 +4,26 @@ export default auth((req) => {
   const { pathname } = req.nextUrl
   const isAuthenticated = !!req.auth
 
+  console.log(`🔒 Middleware Debug:`)
+  console.log(`   Path: ${pathname}`)
+  console.log(`   req.auth:`, req.auth)
+  console.log(`   isAuthenticated: ${isAuthenticated}`)
+  console.log(`   ---`)
+
   // Helper function to check if path matches pattern
   const matchesPattern = (path: string, patterns: string[]): boolean => {
     return patterns.some(pattern => {
       if (pattern.includes('*')) {
-        const regex = new RegExp('^' + pattern.replace(/\*/g, '.*') + '$')
-        return regex.test(path)
+        // Escapar caracteres especiales y reemplazar * por .*
+        const escapedPattern = pattern.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\\\*/g, '.*')
+        const regex = new RegExp('^' + escapedPattern + '$')
+        const matches = regex.test(path)
+        console.log(`🔍 Pattern "${pattern}" vs "${path}": ${matches}`) // Debug
+        return matches
       }
-      return path === pattern
+      const exactMatch = path === pattern
+      console.log(`🔍 Exact "${pattern}" vs "${path}": ${exactMatch}`) // Debug
+      return exactMatch
     })
   }
 
@@ -20,6 +32,7 @@ export default auth((req) => {
     '/login',
     '/register',
     '/',
+    '/api/movies',
     '/about',
     '/contact',
     '/movies/*/preview',  // Movie previews
@@ -34,7 +47,7 @@ export default auth((req) => {
     '/profile/*',
     '/orders',
     '/orders/*',
-    '/movies/*/book',     // Movie booking
+    '/movies/*/book',
     '/admin',
     '/admin/*',
   ]

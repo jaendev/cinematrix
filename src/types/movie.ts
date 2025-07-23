@@ -1,3 +1,5 @@
+import { Genre } from "./genre"
+
 export interface DataMovie {
   data: []
   success: string
@@ -8,6 +10,7 @@ export interface Movie extends DataMovie {
   id: number
   title: string
   originalTitle?: string
+  genres: Genre[]
   synopsis?: string
   duration: number
   releaseDate: string

@@ -4,8 +4,8 @@ import CustomDatePicker from "@/components/ui/CustomDataPicker";
 import { RegisterSkeleton } from "@/components/ui/RegisterSkeleton";
 import { createUser } from "@/services/authService";
 import { ResponseUserDTO } from "@/types/user";
-import { ArrowLeft, Film, Mail, Phone, User, Lock, EyeOff, Eye, CalendarIcon } from "lucide-react";
-import { signIn, getSession, SignInResponse } from 'next-auth/react'
+import { ArrowLeft, Film, Mail, Phone, User, Lock, EyeOff, Eye } from "lucide-react";
+import { signIn, SignInResponse } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
 import { useState } from "react";
 

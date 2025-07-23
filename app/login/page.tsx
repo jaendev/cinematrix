@@ -76,7 +76,7 @@ export default function LoginPage() {
         {/* Back Button */}
         <button
           onClick={() => router.push('/')}
-          className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-300 mb-8"
+          className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-300 mb-8 cursor-pointer"
         >
           <ArrowLeft className="h-5 w-5" />
           <span>Back to Home</span>

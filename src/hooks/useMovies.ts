@@ -2,31 +2,32 @@
 'use client'
 import { useEffect, useState } from "react";
 import { getMovies } from "@/services/movieService";
-import { DataMovie, Movie } from "@/types/movie";
+import { Movie } from "@/types/movie";
 
 export function useMovies() {
-  const [dataMovie, setDataMovie] = useState<DataMovie>()
   const [movies, setMovies] = useState<Movie[]>()
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(() => {
-    const fetchAlert = async () => {
+    const fetchMovies = async () => {
       try {
+        setLoading(true)
         const data = await getMovies()
-        setDataMovie(data)
-        if (dataMovie) {
+
+        if (data && data.data) {
           setMovies(data.data as Movie[])
         }
       } catch (e: any) {
         setError(e.message || 'Error desconocido');
+        console.error('Error fetching movies:', e)
       } finally {
         setLoading(false);
       }
     }
 
-    fetchAlert()
-  }, [dataMovie])
+    fetchMovies()
+  }, [])
 
   return { movies, error, loading }
 }
