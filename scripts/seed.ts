@@ -74,6 +74,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'PG-13',
+        posterUrl: '/uploads/posters/inception.jpg',
         price: 12.99
       },
       {
@@ -85,6 +86,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'R',
+        posterUrl: '/uploads/posters/pulp-fiction.png',
         price: 9.99
       },
       {
@@ -96,6 +98,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'PG-13',
+        posterUrl: '/uploads/posters/dune.jpg',
         price: 14.99
       },
       {
@@ -107,6 +110,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'PG-13',
+        posterUrl: '/uploads/posters/the-dark-knight.jpg',
         price: 11.99
       },
       {
@@ -118,6 +122,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'R',
+        posterUrl: '/uploads/posters/goodfellas.jpeg',
         price: 10.99
       },
       {
@@ -129,6 +134,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'PG-13',
+        posterUrl: '/uploads/posters/jurassic-park.jpg',
         price: 10.99
       },
       {
@@ -140,6 +146,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'R',
+        posterUrl: '/uploads/posters/blade-runner-2049.jpg',
         price: 13.99
       },
       {
@@ -151,6 +158,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'R',
+        posterUrl: '/uploads/posters/get-out.jpg',
         price: 12.99
       },
       {
@@ -162,6 +170,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'PG-13',
+        posterUrl: '/uploads/posters/knives-out.jpg',
         price: 12.99
       },
       {
@@ -173,6 +182,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'R',
+        posterUrl: '/uploads/posters/nomadland.jpg',
         price: 13.99
       },
       {
@@ -184,6 +194,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'R',
+        posterUrl: '/uploads/posters/baby-driver.jpg',
         price: 11.99
       },
       {
@@ -195,6 +206,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'R',
+        posterUrl: '/uploads/posters/the-shape-of-water.jpg',
         price: 12.99
       },
       {
@@ -206,6 +218,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'PG-13',
+        posterUrl: '/uploads/posters/black-panther.jpg',
         price: 13.99
       },
       {
@@ -217,6 +230,7 @@ async function seedDatabase() {
         country: 'South Korea',
         language: 'Korean',
         rating: 'R',
+        posterUrl: '/uploads/posters/parasite.jpg',
         price: 14.99
       },
       {
@@ -228,6 +242,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'PG-13',
+        posterUrl: '/uploads/posters/wonder-woman.jpg',
         price: 12.99
       },
       {
@@ -239,6 +254,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'R',
+        posterUrl: '/uploads/posters/lady-bird.png',
         price: 11.99
       },
       {
@@ -250,6 +266,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'R',
+        posterUrl: '/uploads/posters/django-unchained.jpeg',
         price: 11.99
       },
       {
@@ -261,6 +278,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'PG-13',
+        posterUrl: '/uploads/posters/interestellar.jpg',
         price: 13.99
       },
       {
@@ -272,6 +290,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'R',
+        posterUrl: '/uploads/posters/the-departed.jpg',
         price: 10.99
       },
       {
@@ -283,6 +302,7 @@ async function seedDatabase() {
         country: 'USA',
         language: 'English',
         rating: 'PG-13',
+        posterUrl: '/uploads/posters/arrival.jpeg',
         price: 12.99
       }
     ]

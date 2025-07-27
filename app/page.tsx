@@ -68,7 +68,7 @@ export default function Home() {
                 <p className="text-gray-400">
                   {searchQuery
                     ? `Showing ${filteredMovies.length} result${filteredMovies.length !== 1 ? 's' : ''} for "${searchQuery}"`
-                    : 'Find your next cinematic adventure'
+                    : 'Find your next CineMatrix adventure'
                   }
                 </p>
               </div>

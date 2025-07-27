@@ -17,7 +17,7 @@ export interface Movie extends DataMovie {
   country?: string
   language?: string
   rating?: string
-  posterUrl?: string
+  poster?: string
   trailerUrl?: string
   price: number
   isActive: boolean

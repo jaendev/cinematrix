@@ -4,7 +4,7 @@ import Providers from "@/components/SessionProvider";
 
 export const metadata: Metadata = {
   title: "Cinematrix",
-  description: "Cinematix - Your Ultimate Movie Experience",
+  description: "CineMatrix - Your Ultimate Movie Experience",
 };
 
 export default function RootLayout({

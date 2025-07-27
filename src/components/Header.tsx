@@ -33,7 +33,7 @@ export default function Header({ searchQuery = '', onSearchChange }: HeaderProps
           {/* Logo */}
           <div className="flex items-center space-x-2 cursor-pointer" onClick={() => router.push('/')}>
             <Film className="h-8 w-8 text-yellow-400" />
-            <span className="text-2xl font-bold text-white">CineMax</span>
+            <span className="text-2xl font-bold text-white">CineMatrix</span>
           </div>
 
           {/* Search Bar */}
